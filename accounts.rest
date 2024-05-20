@@ -1,0 +1,40 @@
+@host = http://localhost:3333/accounts
+
+### 
+GET {{host}} HTTP/1.1
+Content-Type: application/json
+
+###
+GET {{host}}/2 HTTP/1.1
+Content-Type: application/json
+
+### 
+POST {{host}} HTTP/1.1
+Content-Type: application/json
+
+{
+  "category": 2,
+  "name": "Energy"
+}
+
+
+### 
+PATCH {{host}}/2/limit HTTP/1.1
+Content-Type: application/json
+
+{
+  "limit": 500
+}
+
+###
+POST {{host}}/1/transfer/3 HTTP/1.1
+Content-Type: application/json
+
+{
+  "ammount": 13900.75
+}
+
+
+###
+DELETE {{host}}/7 HTTP/1.1
+Content-Type: application/json

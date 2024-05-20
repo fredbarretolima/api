@@ -1,0 +1,56 @@
+@host = http://localhost:3333/accounts
+
+###
+POST {{host}} HTTP/1.1
+content-type: application/json
+
+{
+  "category": 1,
+  "name": "Salary"
+}
+
+###
+POST {{host}} HTTP/1.1
+content-type: application/json
+
+{
+  "category": 3,
+  "name": "Picpay Card",
+  "limit": 30000
+}
+
+###
+POST {{host}} HTTP/1.1
+content-type: application/json
+
+{
+  "category": 3,
+  "name": "PicPay savings account"
+}
+
+###
+POST {{host}} HTTP/1.1
+content-type: application/json
+
+{
+  "category": 2,
+  "name": "Grocery store"
+}
+
+###
+POST {{host}} HTTP/1.1
+content-type: application/json
+
+{
+  "category": 2,
+  "name": "Energy"
+}
+
+###
+POST {{host}} HTTP/1.1
+content-type: application/json
+
+{
+  "category": 2,
+  "name": "Rent"
+}
